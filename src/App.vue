@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <Nav/>
+    <Landing />
+    <About/>
+    <Work/>
+    <Contact/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav'
+import Landing from './components/Landing'
+import About from './components/About'
+import Contact from './components/Contact'
+import Work from './components/Work'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Landing,
+    About,
+    Nav,
+    Contact,
+    Work
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
+/* #app { */
+  /* height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('./assets/trumpet.jpg');
+  background-size: cover; 
+  background-attachment: fixed; */
+/* } */
 </style>
